@@ -38,7 +38,7 @@ public class Calculatrice extends JFrame {
         	
                 
                 this.setSize(350, 300); //(Largeur, Hauteur)
-                this.setTitle("Calculatricetttyyy"); //Nom programme
+                this.setTitle("Calculatricetttyyyhh"); //Nom programme
                 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 this.setLocationRelativeTo(null);
                 this.setResizable(false);
