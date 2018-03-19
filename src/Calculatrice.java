@@ -39,6 +39,7 @@ public class Calculatrice extends JFrame {
                 
                 this.setSize(350, 300); //(Largeur, Hauteur)
                 this.setTitle("Calculatricetttxxxvvv"); //Nom programme
+		/* add new comment*/
                 this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 this.setLocationRelativeTo(null);
                 this.setResizable(false);
@@ -66,7 +67,7 @@ public class Calculatrice extends JFrame {
                 
                 for(int i = 0; i < tab_string.length; i++)
                 {
-                    tab_button[i] = new JButton(tab_string[i]);		// création des boutons
+                    tab_button[i] = new JButton(tab_string[i]);		// crÃ©ation des boutons
                     tab_button[i].setPreferredSize(dim);
                     
                     switch(i){
@@ -74,14 +75,14 @@ public class Calculatrice extends JFrame {
                     	case 11 :
                     		tab_button[i].setForeground(Color.red);
                     		tab_button[i].addActionListener(new EgalListener());
-                    		chiffre.add(tab_button[i]); // égale
+                    		chiffre.add(tab_button[i]); // Ã©gale
                     		break;
                     	
                     	case 12 :
                     		tab_button[i].setForeground(Color.blue);
 	                        tab_button[i].addActionListener(new ResetListener());
 	                        tab_button[i].setPreferredSize(dim2);
-	                        operateur.add(tab_button[i]); // opérande
+	                        operateur.add(tab_button[i]); // opÃ©rande
                     		break;
                     	    
                     	case 13 :
@@ -131,7 +132,7 @@ public class Calculatrice extends JFrame {
  
                 container.add(panEcran, BorderLayout.NORTH); // affichage
                 container.add(chiffre, BorderLayout.CENTER); // corps
-                container.add(operateur, BorderLayout.EAST); // opérande
+                container.add(operateur, BorderLayout.EAST); // opÃ©rande
         }
         
         
@@ -176,7 +177,7 @@ public class Calculatrice extends JFrame {
                         }
                         else
                         {
-                                if(!ecran.getText().equals("0")) // si écran = 0
+                                if(!ecran.getText().equals("0")) // si Ã©cran = 0
                                         str = ecran.getText() + str;
                         }
                         
